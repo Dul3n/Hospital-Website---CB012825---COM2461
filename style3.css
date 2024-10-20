@@ -1,0 +1,134 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ded7b7a5;
+}
+
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d9886a3e;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Field Styling */
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    border: 1px solid #2f2925b6;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #D9886A;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #e0b79a;
+}
+
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 10px; /* Adjust margin to fit better on small screens */
+    }
+
+    .contact-form h2 {
+        font-size: 20px; /* Adjust heading size for better readability */
+    }
+
+    .contact-form label {
+        font-size: 12px; /* Smaller font size for labels */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        padding: 8px; /* Adjust padding for input fields */
+        font-size: 14px; /* Ensure input text is readable */
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 10px; /* Smaller padding for buttons */
+    }
+}
+
+/* For medium screens (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header nav ul {
+        justify-content: space-between;
+    }
+
+    .contact-form {
+        padding: 25px; /* Increase padding slightly for better appearance */
+        margin: 15px; /* Adjust margin to fit better on tablet screens */
+    }
+
+    .contact-form h2 {
+        font-size: 24px; /* Adjust heading size for better readability */
+    }
+
+    .contact-form label {
+        font-size: 14px; /* Maintain label font size for consistency */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        padding: 12px; /* Increase padding for input fields */
+        font-size: 16px; /* Slightly larger font size for input text */
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 14px; /* Larger padding for buttons */
+        font-size: 16px; /* Ensure button text is readable */
+    }
+}
+
+/* For large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+    .service-item {
+        width: 30%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
